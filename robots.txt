@@ -1,0 +1,78 @@
+# robots.txt — MMDAI (mmandai.github.io)
+# Free real estate calculators for UK, US, Poland, Germany, France, Spain, Italy and Switzerland
+# Last updated: May 2026
+
+# -----------------------------------------------
+# General crawlers — full access
+# -----------------------------------------------
+User-agent: *
+Allow: /
+
+# -----------------------------------------------
+# Google
+# -----------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# -----------------------------------------------
+# Bing / Microsoft
+# -----------------------------------------------
+User-agent: Bingbot
+Allow: /
+
+User-agent: adidxbot
+Allow: /
+
+# -----------------------------------------------
+# AI crawlers — explicitly permitted
+# All content is free and intended for wide use
+# -----------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# -----------------------------------------------
+# Sitemap
+# -----------------------------------------------
+Sitemap: https://mmandai.github.io/sitemap.xml
