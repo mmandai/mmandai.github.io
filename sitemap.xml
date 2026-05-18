@@ -352,4 +352,25 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://mmandai.github.io/it-glossario/"/>
   </url>
 
+  <!-- ===================== -->
+  <!-- HOW IT WORKS          -->
+  <!-- ===================== -->
+        
+  <url>
+    <loc>https://mmandai.github.io/methodology/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ===================== -->
+  <!-- PRIVACY POLICY        -->
+  <!-- ===================== -->
+        
+<url>
+  <loc>https://mmandai.github.io/privacy/</loc>
+  <lastmod>2026-05-18</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.3</priority>
+</url>
 </urlset>
