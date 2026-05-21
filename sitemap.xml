@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ===================== -->
+  <!-- HOMEPAGE              -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ===================== -->
+  <!-- ABOUT / UTILITY       -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/about/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/methodology/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/privacy/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- ===================== -->
+  <!-- UK CALCULATORS        -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/uk-rental-yield/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/uk-rental-yield/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/uk-sdlt-calculator/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/uk-sdlt-calculator/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/uk-flip-and-profit/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/uk-flip-and-profit/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/uk-hmo-calculator/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/uk-hmo-calculator/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/uk-section24/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/uk-section24/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/uk-rent-vs-buy/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/uk-rent-vs-buy/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- UK EXPLAINED PAGES    -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/uk-section-24-explained/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/uk-section-24-explained/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/uk-hmo-vs-btl/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/uk-hmo-vs-btl/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/uk-rent-vs-buy-explained/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/uk-rent-vs-buy-explained/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- US CALCULATORS        -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/us-mortgage-affordability/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-mortgage-affordability/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/us-hipoteca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/us-mortgage-affordability/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/us-rental-roi/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-rental-roi/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/us-roi-alquiler/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/us-rental-roi/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/us-closing-cost-estimator/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-closing-cost-estimator/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/us-hipoteca/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/us-hipoteca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-mortgage-affordability/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/us-mortgage-affordability/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/us-roi-alquiler/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/us-roi-alquiler/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-rental-roi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/us-rental-roi/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/us-alquilar-comprar/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/us-alquilar-comprar/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- US EXPLAINED PAGES    -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/us-mortgage-vs-buy/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-mortgage-vs-buy/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/us-cap-rate-explained/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-cap-rate-explained/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/us-fha-vs-conventional/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-fha-vs-conventional/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/us-macrs-depreciation-explained/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-macrs-depreciation-explained/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- POLISH CALCULATORS    -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/pl-kredyt-vs-wynajem/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mmandai.github.io/pl-kredyt-vs-wynajem/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/pl-rentownosc-najmu/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mmandai.github.io/pl-rentownosc-najmu/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/pakiet-inwestora/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mmandai.github.io/pakiet-inwestora/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- POLISH EXPLAINED      -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/pl-kredyt-vs-wynajem-wyjasnienie/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mmandai.github.io/pl-kredyt-vs-wynajem-wyjasnienie/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/pl-ryczalt-vs-zasady-ogolne/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mmandai.github.io/pl-ryczalt-vs-zasady-ogolne/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- GERMAN CALCULATORS    -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/de-grunderwerbsteuer/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/de-grunderwerbsteuer/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/de-renditerechner/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/de-renditerechner/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/de-afa/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/de-afa/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- GERMAN EXPLAINED      -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/de-grunderwerbsteuer-erklart/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/de-grunderwerbsteuer-erklart/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/de-afa-erklart/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/de-afa-erklart/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- FRENCH CALCULATORS    -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/fr-rendement-locatif/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/fr-rendement-locatif/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/fr-plus-value-immobiliere/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/fr-plus-value-immobiliere/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- FRENCH EXPLAINED      -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/fr-lmnp-vs-sci/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/fr-lmnp-vs-sci/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/fr-micro-foncier-vs-reel/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/fr-micro-foncier-vs-reel/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/fr-plus-value-expliquee/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/fr-plus-value-expliquee/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- SWISS CALCULATORS     -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/ch-de-direkte-vs-indirekte-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/ch-de-direkte-vs-indirekte-rechner/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/ch-de-direkte-vs-indirekte-rechner/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- SWISS EXPLAINED       -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/ch-de-direkte-vs-indirekte-erklart/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/ch-de-direkte-vs-indirekte-erklart/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect-explique/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/ch-de-direkte-vs-indirekte-erklart/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect-explique/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect-explique/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/ch-de-direkte-vs-indirekte-erklart/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/ch-de-direkte-vs-indirekte-erklart/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- SPANISH CALCULATOR    -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/es-itp/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/es-itp/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- SPANISH EXPLAINED     -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/es-itp-vs-iva-explicado/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/es-itp-vs-iva-explicado/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/es-gastos-compraventa/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/es-gastos-compraventa/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- ITALIAN CALCULATOR    -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/it-cedolare-secca-vs-irpef/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mmandai.github.io/it-cedolare-secca-vs-irpef/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- ITALIAN EXPLAINED     -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/it-cedolare-secca-spiegato/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mmandai.github.io/it-cedolare-secca-spiegato/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/it-affitti-brevi-vs-lunghi/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mmandai.github.io/it-affitti-brevi-vs-lunghi/"/>
+  </url>
+
+  <!-- ===================== -->
+  <!-- GLOSSARIES            -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://mmandai.github.io/uk-glossary/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/uk-glossary/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/us-glossary/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-glossary/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/us-glosario/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/us-glossary/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/us-glosario/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/us-glosario/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mmandai.github.io/us-glossary/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/us-glossary/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/pl-slownik/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://mmandai.github.io/pl-slownik/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/de-glossar/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/de-glossar/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/fr-glossaire/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/fr-glossaire/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/ch-glossar/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/ch-glossar/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/ch-glossaire/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/ch-glossar/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/ch-glossaire/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mmandai.github.io/ch-glossaire/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mmandai.github.io/ch-glossar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mmandai.github.io/ch-glossar/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/es-glosario/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mmandai.github.io/es-glosario/"/>
+  </url>
+
+  <url>
+    <loc>https://mmandai.github.io/it-glossario/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mmandai.github.io/it-glossario/"/>
+  </url>
+
+</urlset>
