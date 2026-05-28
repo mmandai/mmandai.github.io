@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page Not Found · MMDAI</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;}
+:root{
+  --ink:#0f172a;--ink2:#334155;--ink3:#64748b;--ink4:#94a3b8;
+  --paper:#f8fafc;--white:#ffffff;--rule:#e2e8f0;
+  --sans:'Manrope',sans-serif;--mono:'DM Mono',monospace;
+  --r:10px;--r2:16px;
+  --shadow:0 1px 3px rgba(0,0,0,.06),0 4px 20px rgba(0,0,0,.08);
+}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);min-height:100vh;display:flex;flex-direction:column;}
+.header{padding:20px 0;border-bottom:1px solid var(--rule);background:var(--white);}
+.header-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-size:22px;font-weight:900;letter-spacing:-.03em;text-decoration:none;color:var(--ink);}
+.main{flex:1;display:flex;align-items:center;justify-content:center;padding:80px 24px;}
+.content{text-align:center;max-width:520px;}
+.code{font-family:var(--mono);font-size:96px;font-weight:500;color:var(--rule);line-height:1;margin-bottom:32px;letter-spacing:-.04em;}
+h1{font-size:28px;font-weight:800;color:var(--ink);margin-bottom:12px;letter-spacing:-.03em;}
+p{font-size:16px;color:var(--ink3);line-height:1.7;margin-bottom:32px;}
+.links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;border-radius:var(--r);font-size:14px;font-weight:700;text-decoration:none;transition:opacity .15s;}
+.btn-primary{background:var(--ink);color:var(--white);}
+.btn-secondary{background:var(--white);color:var(--ink);border:1.5px solid var(--rule);}
+.btn:hover{opacity:.8;}
+.markets{margin-top:48px;padding-top:32px;border-top:1px solid var(--rule);}
+.markets-label{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink4);margin-bottom:16px;}
+.market-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+.market-link{font-size:13px;font-weight:600;color:var(--ink3);text-decoration:none;padding:6px 14px;border-radius:20px;border:1px solid var(--rule);background:var(--white);transition:border-color .15s,color .15s;}
+.market-link:hover{color:var(--ink);border-color:var(--ink4);}
+footer{padding:24px;text-align:center;border-top:1px solid var(--rule);font-size:12px;color:var(--ink4);}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a href="https://mmandai.github.io/" class="logo">MMDAI</a>
+  </div>
+</header>
+<main class="main">
+  <div class="content">
+    <div class="code">404</div>
+    <h1>Page not found</h1>
+    <p>The page you're looking for doesn't exist or has been moved. Try one of the calculators below.</p>
+    <div class="links">
+      <a href="https://mmandai.github.io/" class="btn btn-primary">← All Calculators</a>
+      <a href="https://mmandai.github.io/about/" class="btn btn-secondary">About MMDAI</a>
+    </div>
+    <div class="markets">
+      <div class="markets-label">Jump to a market</div>
+      <div class="market-links">
+        <a href="https://mmandai.github.io/uk-rental-yield/" class="market-link">🇬🇧 UK</a>
+        <a href="https://mmandai.github.io/us-mortgage-affordability/" class="market-link">🇺🇸 US</a>
+        <a href="https://mmandai.github.io/pakiet-inwestora/" class="market-link">🇵🇱 PL</a>
+        <a href="https://mmandai.github.io/de-grunderwerbsteuer/" class="market-link">🇩🇪 DE</a>
+        <a href="https://mmandai.github.io/fr-rendement-locatif/" class="market-link">🇫🇷 FR</a>
+        <a href="https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect/" class="market-link">🇨🇭 CH</a>
+        <a href="https://mmandai.github.io/es-itp/" class="market-link">🇪🇸 ES</a>
+        <a href="https://mmandai.github.io/it-cedolare-secca-vs-irpef/" class="market-link">🇮🇹 IT</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>© 2026 MMDAI · Free real estate calculators · <a href="https://mmandai.github.io/privacy/" style="color:inherit;">Privacy</a></footer>
+</body>
+</html>
