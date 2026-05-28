@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MMDAI — Real Estate Calculators for UK, US, Poland, Germany & More</title>
+<meta name="description" content="Free real estate calculators for UK, US, Poland, Germany, Spain, France, Italy and Switzerland. Rental yield, stamp duty, kredyt vs wynajem, rentowność najmu and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;}
+:root{
+  --ink:#0f172a;--ink2:#334155;--ink3:#64748b;--ink4:#94a3b8;
+  --paper:#f8fafc;--white:#ffffff;--rule:#e2e8f0;
+  --sans:'Manrope',sans-serif;--mono:'DM Mono',monospace;
+  --r:10px;--r2:16px;
+  --shadow:0 1px 3px rgba(0,0,0,.06),0 4px 20px rgba(0,0,0,.08);
+}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);min-height:100vh;}
+.header{padding:20px 0;border-bottom:1px solid var(--rule);background:var(--white);}
+.header-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-size:22px;font-weight:900;letter-spacing:-.03em;text-decoration:none;color:var(--ink);}
+.hero{padding:80px 0 64px;text-align:center;background:var(--white);border-bottom:1px solid var(--rule);}
+.hero-inner{max-width:680px;margin:0 auto;padding:0 24px;}
+.hero-tag{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink4);margin-bottom:20px;}
+.hero h1{font-size:clamp(36px,6vw,68px);font-weight:900;line-height:1.0;letter-spacing:-.04em;color:var(--ink);margin-bottom:20px;}
+.hero-lead{font-size:17px;color:var(--ink3);line-height:1.7;font-weight:500;}
+.markets{max-width:1100px;margin:0 auto;padding:72px 24px;}
+.market-block{margin-bottom:64px;}
+.market-block:last-child{margin-bottom:0;}
+.market-header{display:flex;align-items:center;gap:16px;margin-bottom:28px;padding-bottom:16px;border-bottom:2px solid var(--rule);}
+.market-flag{font-size:32px;line-height:1;}
+.market-name{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);}
+.market-count{font-family:var(--mono);font-size:11px;color:var(--ink4);margin-left:auto;}
+.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
+.card{background:var(--white);border:1px solid var(--rule);border-radius:var(--r2);padding:24px;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s,border-color .15s;display:flex;flex-direction:column;gap:10px;text-align:center;align-items:center;justify-content:center;}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--ink4);}
+.card-market{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;}
+.card-title{font-size:16px;font-weight:800;color:var(--ink);line-height:1.3;letter-spacing:-.02em;}
+.card-desc{font-size:12px;color:var(--ink3);line-height:1.6;font-weight:500;flex:1;}
+
+
+.card.uk{border-top:3px solid #c8a84b;}.card.uk .card-market{color:#8B6914;}
+.card.us{border-top:3px solid #2563eb;}.card.us .card-market{color:#1d4ed8;}
+.card.es{border-top:3px solid #c8692a;}.card.es .card-market{color:#8b3a12;}
+.card.de{border-top:3px solid #4A7A2E;}.card.de .card-market{color:#2D5A18;}
+.card.fr{border-top:3px solid #6C3FC7;}.card.fr .card-market{color:#4A2A8E;}
+.card.it{border-top:3px solid #6B8F47;}.card.it .card-market{color:#3D5C24;}
+.card.ch{border-top:3px solid #2E6DA4;}.card.ch .card-market{color:#1A4A7A;}
+.card.pl{border-top:3px solid #DC2626;}.card.pl .card-market{color:#B91C1C;}
+footer{background:var(--ink);color:rgba(255,255,255,.4);padding:32px 0;text-align:center;margin-top:40px;}
+.footer-logo{font-size:20px;font-weight:900;color:var(--white);letter-spacing:-.03em;margin-bottom:10px;}
+.footer-note{font-size:12px;line-height:1.7;max-width:600px;margin:0 auto;padding:0 24px;}
+    .cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#0f172a;padding:16px 24px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;font-size:13px;border-top:1px solid rgba(255,255,255,.1);}
+    .cookie-banner p{max-width:560px;text-align:center;color:rgba(255,255,255,.7);font-size:13px;}
+    .cookie-banner a{color:#fff;text-decoration:underline;}
+    .cookie-btn{padding:8px 20px;border-radius:20px;font-size:13px;font-weight:700;cursor:pointer;border:none;font-family:var(--sans);}
+    .cookie-accept{background:#334155;color:#fff;}
+    .cookie-reject{background:transparent;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.3)!important;}
+    .cookie-buttons{display:flex;gap:8px;}
+    @media(max-width:600px){.cookie-banner{flex-direction:column;text-align:center;}}
+    @media(max-width:560px){.cards{grid-template-columns:1fr !important;}.card,.card[style],.cards > div{grid-column:span 1 !important;}.hero h1{font-size:36px;}}
+    .ad-slot{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f8f9fa 0%,#f1f3f4 100%);border:1px dashed #d1d5db;border-radius:8px;color:#9ca3af;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-family:'DM Mono',monospace;}
+    .ad-banner{height:90px;margin:32px 0;}
+    .ad-block{max-width:1100px;margin:0 auto;padding:0 24px;}
+    /* Article cards — diagonal stripe pattern in country color */
+    .card.article{position:relative;overflow:hidden;border-style:dashed;}
+    .card.article .card-market,.card.article .card-title{position:relative;z-index:1;}
+    /* Glossary cards — solid country color */
+    .card.glossary .card-market{color:rgba(255,255,255,.6);}
+    .card.glossary .card-title{color:var(--white);}
+    /* UK */
+    .card.uk.article{background:repeating-linear-gradient(135deg,transparent,transparent 8px,rgba(200,168,75,.2) 8px,rgba(200,168,75,.2) 16px);background-color:var(--white);border-color:#c8a84b;}
+    .card.uk.glossary{background:#c8a84b;border-color:#c8a84b;}
+    /* US */
+    .card.us.article{background:repeating-linear-gradient(135deg,transparent,transparent 8px,rgba(37,99,235,.15) 8px,rgba(37,99,235,.15) 16px);background-color:var(--white);border-color:#2563eb;}
+    .card.us.glossary{background:#2563eb;border-color:#2563eb;}
+    /* ES */
+    .card.es.article{background:repeating-linear-gradient(135deg,transparent,transparent 8px,rgba(200,105,42,.2) 8px,rgba(200,105,42,.2) 16px);background-color:var(--white);border-color:#c8692a;}
+    .card.es.glossary{background:#c8692a;border-color:#c8692a;}
+    /* DE */
+    .card.de.article{background:repeating-linear-gradient(135deg,transparent,transparent 8px,rgba(74,122,46,.2) 8px,rgba(74,122,46,.2) 16px);background-color:var(--white);border-color:#4A7A2E;}
+    .card.de.glossary{background:#4A7A2E;border-color:#4A7A2E;}
+    /* FR */
+    .card.fr.article{background:repeating-linear-gradient(135deg,transparent,transparent 8px,rgba(108,63,199,.2) 8px,rgba(108,63,199,.2) 16px);background-color:var(--white);border-color:#6C3FC7;}
+    .card.fr.glossary{background:#6C3FC7;border-color:#6C3FC7;}
+    /* IT */
+    .card.it.article{background:repeating-linear-gradient(135deg,transparent,transparent 8px,rgba(107,143,71,.2) 8px,rgba(107,143,71,.2) 16px);background-color:var(--white);border-color:#6B8F47;}
+    .card.it.glossary{background:#6B8F47;border-color:#6B8F47;}
+    /* CH */
+    .card.ch.article{background:repeating-linear-gradient(135deg,transparent,transparent 8px,rgba(46,109,164,.2) 8px,rgba(46,109,164,.2) 16px);background-color:var(--white);border-color:#2E6DA4;}
+    .card.ch.glossary{background:#2E6DA4;border-color:#2E6DA4;}
+    /* PL */
+    .card.pl.article{background:repeating-linear-gradient(135deg,transparent,transparent 8px,rgba(220,38,38,.2) 8px,rgba(220,38,38,.2) 16px);background-color:var(--white);border-color:#DC2626;}
+    .card.pl.glossary{background:#DC2626;border-color:#DC2626;}
+</style>
+<script>
+function loadAnalytics(){
+  var g=document.createElement('script');g.async=true;
+  g.src='https://www.googletagmanager.com/gtag/js?id=G-PTMK2E1ZQ4';
+  document.head.appendChild(g);
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}window.gtag=gtag;
+  gtag('js',new Date());gtag('config','G-PTMK2E1ZQ4');
+  var s=document.createElement('script');s.async=true;
+  s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4019637448990375';
+  s.crossOrigin='anonymous';document.head.appendChild(s);
+}
+if(localStorage.getItem('cookieConsent')==='accepted'){loadAnalytics();}
+</script>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mmandai.github.io/">
+<meta property="og:title" content="MMDAI — Free Real Estate Calculators for 8 Countries">
+<meta property="og:description" content="Free real estate calculators for UK, US, Poland, Germany, France, Spain, Italy and Switzerland. Rental yield, stamp duty, kredyt vs wynajem and more.">
+<meta property="og:image" content="https://mmandai.github.io/og-image.png">
+<meta property="og:site_name" content="MMDAI">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MMDAI — Free Real Estate Calculators for 8 Countries">
+<meta name="twitter:description" content="Free real estate calculators for UK, US, Poland, Germany, France, Spain, Italy and Switzerland.">
+<meta name="twitter:image" content="https://mmandai.github.io/og-image.png">
+</head>
+<body>
+<div class="cookie-banner" id="cookieBanner" style="display:none;">
+  <p>We use cookies from Google AdSense. See our <a href="https://mmandai.github.io/privacy/">Privacy Policy</a>.</p>
+  <div class="cookie-buttons">
+    <button class="cookie-btn cookie-accept" onclick="setCookieConsent('accepted')">Accept</button>
+    <button class="cookie-btn cookie-reject" onclick="setCookieConsent('rejected')">Reject</button>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="https://mmandai.github.io" class="logo">MMDAI</a>
+    <nav style="margin-left:auto;display:flex;gap:20px;align-items:center;">
+      <a href="https://mmandai.github.io/methodology/" style="font-size:13px;color:var(--ink3);text-decoration:none;font-family:var(--sans);font-weight:500;">How It Works</a>
+      <a href="https://mmandai.github.io/about/" style="font-size:13px;color:var(--ink3);text-decoration:none;font-family:var(--sans);font-weight:500;">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Free Property Tools</div>
+    <h1>Real Estate Calculators</h1>
+    <p class="hero-lead">Free calculators for property buyers and investors across the UK, US, Poland, Germany, Spain, France, Italy and Switzerland. No signup, no paywall.</p>
+    <p style="font-size:14px;color:var(--ink3);max-width:680px;margin:12px auto 0;line-height:1.7;font-family:var(--sans);">Every calculator is built from primary legislative sources — HMRC, EStG, CGI, TUIR, Ustawa o PIT — and includes an inline methodology section showing the exact formulas used. Results are estimates for informed decision-making, not financial or tax advice. <a href="https://mmandai.github.io/methodology/" style="color:var(--ink2);text-decoration:underline;text-underline-offset:3px;">Learn how it works</a>.</p>
+  </div>
+</section>
+
+<div class="markets">
+
+  <div class="ad-block">
+    <div class="ad-slot ad-banner">Advertisement</div>
+  </div>
+
+  <div class="market-block" id="uk">
+    <div class="market-header">
+      <span class="market-flag">🇬🇧</span>
+      <div><div class="market-name">United Kingdom</div></div>
+      <span class="market-count">6 calculators · 4 articles · 2 glossaries</span>
+    </div>
+    <div class="cards">
+      <a href="https://mmandai.github.io/uk-rental-yield/" class="card uk" style="grid-column:span 2;">
+        <div class="card-market">UK · Rental</div>
+        <div class="card-title">BTL Rental Yield Calculator</div>
+        <div class="card-desc">Gross & net yield, monthly cashflow, ROI after mortgage and tax. Section 24 impact included.</div>
+      </a>
+      <a href="https://mmandai.github.io/uk-sdlt-calculator/" class="card uk" style="grid-column:span 2;">
+        <div class="card-market">UK · Tax</div>
+        <div class="card-title">Stamp Duty (SDLT) Calculator</div>
+        <div class="card-desc">SDLT for residential, second homes and buy-to-let. All rates and thresholds for England & NI.</div>
+      </a>
+      <a href="https://mmandai.github.io/uk-flip-and-profit/" class="card uk" style="grid-column:span 2;">
+        <div class="card-market">UK · Investment</div>
+        <div class="card-title">Flip Profit Calculator</div>
+        <div class="card-desc">Purchase costs, refurbishment, sale costs, CGT and net profit on property flips.</div>
+      </a>
+      <a href="https://mmandai.github.io/uk-hmo-calculator/" class="card uk" style="grid-column:span 2;">
+        <div class="card-market">UK · Rental</div>
+        <div class="card-title">HMO Yield Calculator</div>
+        <div class="card-desc">House in Multiple Occupation yield, room-by-room income, licensing costs and net ROI.</div>
+      </a>
+      <a href="https://mmandai.github.io/uk-section24/" class="card uk" style="grid-column:span 2;">
+        <div class="card-market">UK · Tax</div>
+        <div class="card-title">Section 24 / Ltd Co Calculator</div>
+        <div class="card-desc">Compare personal ownership vs limited company after Section 24 mortgage interest restriction.</div>
+      </a>
+      <a href="https://mmandai.github.io/uk-rent-vs-buy/" class="card uk" style="grid-column:span 2;">
+        <div class="card-market">UK · Decision</div>
+        <div class="card-title">Rent vs Buy Calculator</div>
+        <div class="card-desc">10-year comparison of renting vs buying — opportunity cost, equity, total outlay.</div>
+      </a>
+      
+      
+      
+      
+      <a href="https://mmandai.github.io/uk-glossary/" class="card uk glossary" style="grid-column:span 2;">
+        <div class="card-market">UK · Glossary</div>
+        <div class="card-title">UK Property Glossary</div>
+      </a>
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"><a href="https://mmandai.github.io/uk-section-24-explained/" class="card uk article">
+        <div class="card-market">UK · Article</div>
+        <div class="card-title">Section 24 Explained</div>
+      </a><a href="https://mmandai.github.io/uk-hmo-vs-btl/" class="card uk article">
+        <div class="card-market">UK · Article</div>
+        <div class="card-title">HMO vs BTL Explained</div>
+      </a></div>
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"><a href="https://mmandai.github.io/uk-sdlt-explained/" class="card uk article">
+        <div class="card-market">UK · Article</div>
+        <div class="card-title">SDLT Explained</div>
+      </a><a href="https://mmandai.github.io/uk-rent-vs-buy-explained/" class="card uk article">
+        <div class="card-market">UK · Article</div>
+        <div class="card-title">Rent vs Buy Explained</div>
+      </a></div>
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"></div>
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"></div>
+    </div>
+  </div>
+  <div class="market-block" id="us">
+    <div class="market-header">
+      <span class="market-flag">🇺🇸</span>
+      <div><div class="market-name">United States</div></div>
+      <span class="market-count">6 calculators · 4 articles · 2 glossaries</span>
+    </div>
+    <div class="cards">
+      <a href="https://mmandai.github.io/us-mortgage-affordability/" class="card us" style="grid-column:span 2;">
+        <div class="card-market">US · Mortgage</div>
+        <div class="card-title">Mortgage Affordability Calculator</div>
+        <div class="card-desc">DTI ratio, PMI, FHA MIP, VA funding fee. Conventional, FHA and VA compared side by side.</div>
+      </a>
+      <a href="https://mmandai.github.io/us-rental-roi/" class="card us" style="grid-column:span 2;">
+        <div class="card-market">US · Rental</div>
+        <div class="card-title">Rental Property ROI Calculator</div>
+        <div class="card-desc">Cap rate, cash-on-cash ROI, MACRS depreciation, Schedule E tax estimate and 1% rule check.</div>
+      </a>
+      <a href="https://mmandai.github.io/us-closing-cost-estimator/" class="card us" style="grid-column:span 2;">
+        <div class="card-market">US · Buying</div>
+        <div class="card-title">Closing Costs Calculator</div>
+        <div class="card-desc">Buyer and seller closing costs for all 50 states. Transfer taxes, title insurance, attorney fees.</div>
+      </a>
+      <a href="https://mmandai.github.io/us-hipoteca/" class="card us" style="grid-column:span 2;">
+        <div class="card-market">US-ES · Hipoteca</div>
+        <div class="card-title">Calculadora de Hipoteca</div>
+        <div class="card-desc">DTI, pago mensual PITI, PMI y precio máximo de vivienda — Convencional, FHA y VA comparados.</div>
+      </a>
+      <a href="https://mmandai.github.io/us-roi-alquiler/" class="card us" style="grid-column:span 2;">
+        <div class="card-market">US-ES · ROI</div>
+        <div class="card-title">Propiedad de Alquiler</div>
+        <div class="card-desc">Tasa de capitalización, rendimiento cash-on-cash, depreciación MACRS, Schedule E y regla del 1% — para inversores hispanos en Estados Unidos.</div>
+      </a>
+      <a href="https://mmandai.github.io/us-alquilar-comprar/" class="card us" style="grid-column:span 2;">
+        <div class="card-market">US-ES · Comprar</div>
+        <div class="card-title">Alquilar o Comprar</div>
+        <div class="card-desc">Comparación financiera completa a 10 años — patrimonio acumulado, costo de oportunidad, proyección año por año y el punto en que comprar supera al alquiler.</div>
+      </a>
+      
+      
+      
+      
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;">
+        <a href="https://mmandai.github.io/us-glossary/" class="card us glossary">
+          <div class="card-market">US · Glossary</div>
+          <div class="card-title">US Real Estate Glossary</div>
+        </a>
+        <a href="https://mmandai.github.io/us-glosario/" class="card us glossary">
+          <div class="card-market">US-ES · Glosario</div>
+          <div class="card-title">Glosario Inmobiliario EE.UU.</div>
+        </a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"><a href="https://mmandai.github.io/us-cap-rate-explained/" class="card us article">
+        <div class="card-market">US · Article</div>
+        <div class="card-title">Cap Rate Explained</div>
+      </a><a href="https://mmandai.github.io/us-fha-vs-conventional/" class="card us article">
+        <div class="card-market">US · Article</div>
+        <div class="card-title">FHA vs Conventional</div>
+      </a></div>
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"><a href="https://mmandai.github.io/us-macrs-depreciation-explained/" class="card us article">
+        <div class="card-market">US · Article</div>
+        <div class="card-title">MACRS Depreciation Explained</div>
+      </a><a href="https://mmandai.github.io/us-mortgage-vs-buy/" class="card us article">
+        <div class="card-market">US · Article</div>
+        <div class="card-title">Mortgage vs Buy</div>
+      </a></div>
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"></div>
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"></div>
+    </div>
+  </div>
+
+  <div class="ad-block">
+    <div class="ad-slot ad-banner">Advertisement</div>
+  </div>
+
+  <div class="market-block" id="pl">
+    <div class="market-header">
+      <span class="market-flag">🇵🇱</span>
+      <div><div class="market-name">Polska</div></div>
+      <span class="market-count">3 kalkulatory · 2 artykuły</span>
+    </div>
+    <div class="cards">
+
+      <a href="https://mmandai.github.io/pl-kredyt-vs-wynajem/" class="card pl" style="grid-column:span 2;">
+        <div class="card-market">PL · Decyzja</div>
+        <div class="card-title">Kredyt vs Wynajem</div>
+        <div class="card-desc">Wskaźnik cena/czynsz, tabela 10-letnia, 3 scenariusze oprocentowania. Czy kupić mieszkanie czy wynajmować?</div>
+      </a>
+
+      <a href="https://mmandai.github.io/pl-rentownosc-najmu/" class="card pl" style="grid-column:span 2;">
+        <div class="card-market">PL · Inwestycja</div>
+        <div class="card-title">Rentowność Najmu</div>
+        <div class="card-desc">ROI netto, zysk miesięczny, podatek ryczałtowy 8.5%, pustostany, 3 scenariusze i projekcja 5-letnia.</div>
+      </a>
+
+      <a href="https://mmandai.github.io/pakiet-inwestora/" class="card pl" style="grid-column:span 2;">
+        <div class="card-market">PL · Pakiet</div>
+        <div class="card-title">Pakiet Inwestora</div>
+        <div class="card-desc">Porównywarka nieruchomości, zysk z flipu i estymator kosztów remontu — trzy kalkulatory w jednym miejscu.</div>
+      </a>
+
+      <a href="https://mmandai.github.io/pl-slownik/" class="card pl glossary" style="grid-column:span 2;">
+        <div class="card-market">PL · Słownik</div>
+        <div class="card-title">Słownik Inwestora</div>
+      </a>
+
+      <a href="https://mmandai.github.io/pl-kredyt-vs-wynajem-wyjasnienie/" class="card pl article" style="grid-column:span 2;">
+        <div class="card-market">PL · Artykuł</div>
+        <div class="card-title">Kredyt vs Wynajem — wyjaśnienie</div>
+      </a>
+
+      <a href="https://mmandai.github.io/pl-ryczalt-vs-zasady-ogolne/" class="card pl article" style="grid-column:span 2;">
+        <div class="card-market">PL · Artykuł</div>
+        <div class="card-title">Ryczałt vs Zasady Ogólne</div>
+      </a>
+        </div>
+  </div>
+  <div class="market-block" id="de">
+    <div class="market-header">
+      <span class="market-flag">🇩🇪</span>
+      <div><div class="market-name">Deutschland</div></div>
+      <span class="market-count">3 Rechner · 2 Artikel</span>
+    </div>
+    <div class="cards">
+
+      <a href="https://mmandai.github.io/de-grunderwerbsteuer/" class="card de" style="grid-column:span 2;">
+        <div class="card-market">DE · Steuer</div>
+        <div class="card-title">Grunderwerbsteuer Rechner</div>
+        <div class="card-desc">Grunderwerbsteuer für alle 16 Bundesländer, Kaufnebenkosten, Notargebühren und monatliche Rate.</div>
+      </a>
+
+      <a href="https://mmandai.github.io/de-renditerechner/" class="card de" style="grid-column:span 2;">
+        <div class="card-market">DE · Rendite</div>
+        <div class="card-title">Immobilien Renditerechner</div>
+        <div class="card-desc">Nettomietrendite, AfA nach Baujahr, Cashflow nach Steuer, Kaufpreisfaktor und Eigenkapitalrendite.</div>
+      </a>
+
+      <a href="https://mmandai.github.io/de-afa/" class="card de" style="grid-column:span 2;">
+        <div class="card-market">DE · Steuer</div>
+        <div class="card-title">AfA-Rechner Immobilien</div>
+        <div class="card-desc">Linear, degressiv und §7b Sonder-AfA. Steuerersparnis und 50-jähriger Abschreibungsplan.</div>
+      </a>
+
+      <a href="https://mmandai.github.io/de-glossar/" class="card de glossary" style="grid-column:span 2;">
+        <div class="card-market">DE · Glossar</div>
+        <div class="card-title">Immobilien Glossar</div>
+      </a>
+
+      <a href="https://mmandai.github.io/de-grunderwerbsteuer-erklart/" class="card de article" style="grid-column:span 2;">
+        <div class="card-market">DE · Artikel</div>
+        <div class="card-title">Grunderwerbsteuer erklärt</div>
+      </a>
+
+      <a href="https://mmandai.github.io/de-afa-erklart/" class="card de article" style="grid-column:span 2;">
+        <div class="card-market">DE · Artikel</div>
+        <div class="card-title">AfA erklärt</div>
+      </a>
+        </div>
+  </div>
+
+  <div class="ad-block">
+    <div class="ad-slot ad-banner">Advertisement</div>
+  </div>
+
+  <div class="market-block" id="fr">
+    <div class="market-header">
+      <span class="market-flag">🇫🇷</span>
+      <div><div class="market-name">France</div></div>
+      <span class="market-count">2 calculatrices · 3 articles</span>
+    </div>
+    <div class="cards">
+
+      <a href="https://mmandai.github.io/fr-rendement-locatif/" class="card fr" style="grid-column:span 2;">
+        <div class="card-market">FR · Fiscalité</div>
+        <div class="card-title">Rendement Locatif LMNP vs Nue</div>
+        <div class="card-desc">Comparez les 6 régimes fiscaux — cashflow net après impôts, impact LF 2025 à la revente et régime optimal selon votre situation.</div>
+      </a>
+
+      <a href="https://mmandai.github.io/fr-plus-value-immobiliere/" class="card fr" style="grid-column:span 2;">
+        <div class="card-market">FR · Fiscalité</div>
+        <div class="card-title">Calculateur Plus-Value Immobilière</div>
+        <div class="card-desc">IR 19%, PS 17,2%, abattements par durée de détention, surtaxe progressive et impact LF 2025 pour LMNP réel.</div>
+      </a>
+
+      <a href="https://mmandai.github.io/fr-glossaire/" class="card fr glossary" style="grid-column:span 2;">
+        <div class="card-market">FR · Glossaire</div>
+        <div class="card-title">Glossaire Immobilier</div>
+      </a>
+
+      <a href="https://mmandai.github.io/fr-lmnp-vs-sci/" class="card fr article" style="grid-column:span 2;">
+        <div class="card-market">FR · Article</div>
+        <div class="card-title">LMNP vs SCI</div>
+      </a>
+
+      <a href="https://mmandai.github.io/fr-micro-foncier-vs-reel/" class="card fr article" style="grid-column:span 2;">
+        <div class="card-market">FR · Article</div>
+        <div class="card-title">Micro-Foncier vs Réel</div>
+      </a>
+
+      <a href="https://mmandai.github.io/fr-plus-value-expliquee/" class="card fr article" style="grid-column:span 2;">
+        <div class="card-market">FR · Article</div>
+        <div class="card-title">Plus-value expliquée</div>
+      </a>
+        </div>
+  </div>
+  <div class="market-block" id="ch">
+    <div class="market-header">
+      <span class="market-flag">🇨🇭</span>
+      <div><div class="market-name">Schweiz / Suisse</div></div>
+      <span class="market-count">2 calculateurs · 2 articles</span>
+    </div>
+    <div class="cards">
+      <a href="https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect/" class="card ch" style="grid-column:span 2;">
+        <div class="card-market">CH · FR · Hypothèque</div>
+        <div class="card-title">Amortissement Direct vs Indirect</div>
+        <div class="card-desc">Pilier 3a, économie fiscale, avantage net et impact de la suppression de la valeur locative en 2028.</div>
+      </a>
+      <a href="https://mmandai.github.io/ch-de-direkte-vs-indirekte-rechner/" class="card ch" style="grid-column:span 2;">
+        <div class="card-market">CH · DE · Hypothek</div>
+        <div class="card-title">Direkte vs. Indirekte Amortisation</div>
+        <div class="card-desc">Säule 3a, Steuerersparnis, Kapitalvergleich und Auswirkung der Eigenmietwert-Abschaffung 2028.</div>
+      </a>
+      
+      
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"><a href="https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect-explique/" class="card ch article">
+        <div class="card-market">CH · Article</div>
+        <div class="card-title">Amortissement expliqué</div>
+      </a><a href="https://mmandai.github.io/ch-de-direkte-vs-indirekte-erklart/" class="card ch article">
+        <div class="card-market">CH · Artikel</div>
+        <div class="card-title">Amortisation erklärt</div>
+      </a></div>
+      <a href="https://mmandai.github.io/ch-glossaire/" class="card ch glossary" style="grid-column:span 3;">
+        <div class="card-market">CH · Glossaire</div>
+        <div class="card-title">Glossaire Immobilier CH</div>
+      </a>
+      <a href="https://mmandai.github.io/ch-glossar/" class="card ch glossary" style="grid-column:span 3;">
+        <div class="card-market">CH · Glossar</div>
+        <div class="card-title">Immobilien Glossar CH</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-block">
+    <div class="ad-slot ad-banner">Advertisement</div>
+  </div>
+
+  <div class="market-block" id="es">
+    <div class="market-header">
+      <span class="market-flag">🇪🇸</span>
+      <div><div class="market-name">España</div></div>
+      <span class="market-count">1 calculadora · 2 artículos</span>
+    </div>
+    <div class="cards">
+      <a href="https://mmandai.github.io/es-itp/" class="card es" style="grid-column:span 2;">
+        <div class="card-market">ES · Impuestos</div>
+        <div class="card-title">Calculadora ITP y Gastos de Compraventa</div>
+        <div class="card-desc">ITP, AJD, notaría, registro y gestoría para las 19 Comunidades Autónomas. Segunda mano y obra nueva.</div>
+      </a>
+      
+      
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"><a href="https://mmandai.github.io/es-itp-vs-iva/" class="card es article">
+        <div class="card-market">ES · Artículo</div>
+        <div class="card-title">ITP vs IVA</div>
+      </a><a href="https://mmandai.github.io/es-gastos-compraventa/" class="card es article">
+        <div class="card-market">ES · Artículo</div>
+        <div class="card-title">Gastos de Compraventa</div>
+      </a></div>
+            <a href="https://mmandai.github.io/es-glosario/" class="card es glossary" style="grid-column:span 2;">
+        <div class="card-market">ES · Glosario</div>
+        <div class="card-title">Glosario Inmobiliario</div>
+      </a>
+    </div>
+  </div>
+  <div class="market-block" id="it">
+    <div class="market-header">
+      <span class="market-flag">🇮🇹</span>
+      <div><div class="market-name">Italia</div></div>
+      <span class="market-count">1 calcolatore · 2 articoli</span>
+    </div>
+    <div class="cards">
+      <a href="https://mmandai.github.io/it-cedolare-secca-vs-irpef/" class="card it" style="grid-column:span 2;">
+        <div class="card-market">IT · Fiscalità</div>
+        <div class="card-title">Cedolare Secca vs IRPEF</div>
+        <div class="card-desc">Confronta i due regimi fiscali per canone libero (21%), concordato (10%) e affitti brevi (26%). Risparmio fiscale annuale in euro.</div>
+      </a>
+      
+      
+      <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 2;align-items:stretch;"><a href="https://mmandai.github.io/it-cedolare-secca-spiegato/" class="card it article">
+        <div class="card-market">IT · Articolo</div>
+        <div class="card-title">Cedolare Secca spiegata</div>
+      </a><a href="https://mmandai.github.io/it-affitti-brevi-vs-lunghi/" class="card it article">
+        <div class="card-market">IT · Articolo</div>
+        <div class="card-title">Affitti Brevi vs Lunghi</div>
+      </a></div>
+            <a href="https://mmandai.github.io/it-glossario/" class="card it glossary" style="grid-column:span 2;">
+        <div class="card-market">IT · Glossario</div>
+        <div class="card-title">Glossario Immobiliare</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">MMDAI</div>
+  <p style="margin-bottom:16px;display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
+    <a href="https://mmandai.github.io/about/" style="color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;font-family:var(--sans);">About</a>
+    <a href="https://mmandai.github.io/methodology/" style="color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;font-family:var(--sans);">How It Works</a>
+    <a href="https://mmandai.github.io/privacy/" style="color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;font-family:var(--sans);">Privacy Policy</a>
+    <a href="mailto:imemyselfandai@gmail.com" style="color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;font-family:var(--sans);">Contact</a>
+  </p>
+  <p style="margin-bottom:10px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+    <a href="https://mmandai.github.io/uk-glossary/" style="color:rgba(255,255,255,.35);font-size:12px;text-decoration:none;font-family:var(--sans);">UK Glossary</a>
+    <a href="https://mmandai.github.io/us-glossary/" style="color:rgba(255,255,255,.35);font-size:12px;text-decoration:none;font-family:var(--sans);">US Glossary</a>
+    <a href="https://mmandai.github.io/us-glosario/" style="color:rgba(255,255,255,.35);font-size:12px;text-decoration:none;font-family:var(--sans);">US Glosario</a>
+    <a href="https://mmandai.github.io/pl-slownik/" style="color:rgba(255,255,255,.35);font-size:12px;text-decoration:none;font-family:var(--sans);">Słownik PL</a>
+    <a href="https://mmandai.github.io/de-glossar/" style="color:rgba(255,255,255,.35);font-size:12px;text-decoration:none;font-family:var(--sans);">DE Glossar</a>
+    <a href="https://mmandai.github.io/fr-glossaire/" style="color:rgba(255,255,255,.35);font-size:12px;text-decoration:none;font-family:var(--sans);">Glossaire FR</a>
+    <a href="https://mmandai.github.io/ch-glossaire/" style="color:rgba(255,255,255,.35);font-size:12px;text-decoration:none;font-family:var(--sans);">Glossaire CH</a>
+    <a href="https://mmandai.github.io/ch-glossar/" style="color:rgba(255,255,255,.35);font-size:12px;text-decoration:none;font-family:var(--sans);">CH Glossar</a>
+    <a href="https://mmandai.github.io/es-glosario/" style="color:rgba(255,255,255,.35);font-size:12px;text-decoration:none;font-family:var(--sans);">Glosario ES</a>
+    <a href="https://mmandai.github.io/it-glossario/" style="color:rgba(255,255,255,.35);font-size:12px;text-decoration:none;font-family:var(--sans);">Glossario IT</a>
+  </p>
+  <p class="footer-note">Free real estate calculators for informational purposes only. Not financial, tax or legal advice. Always consult a qualified professional before making property decisions. © MMDAI 2026.</p>
+</footer>
+<script>
+function setCookieConsent(v){localStorage.setItem('cookieConsent',v);document.getElementById('cookieBanner').style.display='none';if(v==='accepted')loadAnalytics();}
+if(!localStorage.getItem('cookieConsent')){document.getElementById('cookieBanner').style.display='flex';}
+</script>
+
+</body>
+</html>
