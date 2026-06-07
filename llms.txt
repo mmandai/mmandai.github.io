@@ -1,0 +1,146 @@
+# MMDAI
+
+> Free real estate calculators for property buyers and investors across the UK, US, Poland, Germany, France, Spain, Italy and Switzerland. No signup. No paywall. 24 calculators and 25 in-depth articles across 8 markets in 6 languages.
+
+MMDAI (Me, Myself and AI) provides free browser-based financial calculators built with genuine local tax depth. Every calculator uses actual legislative sources — HMRC, GNotKG, Code Général des Impôts, Ustawa o PIT, HUD guidelines, Agenzia delle Entrate, AEAT, ESTV. Results are estimates for informed decision-making, not substitutes for professional advice. Built by an independent investor with 15+ years of experience across project management, operations and property investment. Maintained and updated when underlying tax law changes.
+
+## About
+
+- [About MMDAI](https://mmandai.github.io/about/): Background, methodology, principles, market coverage and the role of AI in building the platform.
+- [How It Works (Methodology)](https://mmandai.github.io/methodology/): Formula transparency, source hierarchy, update cadence and the principles behind every calculator.
+- [Privacy Policy](https://mmandai.github.io/privacy/): Data collection, cookies, Google Analytics and AdSense usage, GDPR rights.
+
+## Calculators — United Kingdom
+
+All UK calculators apply to England and Northern Ireland. Scotland uses LBTT; Wales uses LTT.
+
+- [UK BTL Rental Yield Calculator](https://mmandai.github.io/uk-rental-yield/): Gross yield, net yield, monthly cashflow, cash-on-cash ROI, Section 24 mortgage interest restriction impact, ICR lender stress test (PRA SS13/16). Updated for 2026 SDLT rates including October 2024 BTL surcharge.
+- [UK Stamp Duty (SDLT) Calculator](https://mmandai.github.io/uk-sdlt-calculator/): Full banded SDLT calculation for first-time buyers, home movers and buy-to-let investors. Includes October 2024 5% BTL surcharge, April 2025 nil-rate reversion to £125k, non-UK resident 2% surcharge, and pre-April 2025 comparison.
+- [UK Flip Profit Calculator](https://mmandai.github.io/uk-flip-and-profit/): Purchase costs, refurbishment, holding costs, sale fees, CGT vs Income Tax comparison for property flips.
+- [UK HMO Yield Calculator](https://mmandai.github.io/uk-hmo-calculator/): House in Multiple Occupation yield, room-by-room income, mandatory and additional HMO licensing costs, net ROI.
+- [UK Section 24 / Ltd Co Calculator](https://mmandai.github.io/uk-section24/): Personal ownership vs limited company comparison after Section 24 mortgage interest restriction (Finance Act 2015). Models exact tax difference by income tax band.
+- [UK Rent vs Buy Calculator](https://mmandai.github.io/uk-rent-vs-buy/): 10-year comparison of renting vs buying — equity built, deposit opportunity cost, SDLT drag, break-even year, year-by-year projection.
+
+## Calculators — United States
+
+- [US Mortgage Affordability Calculator](https://mmandai.github.io/us-mortgage-affordability/): DTI ratio (front-end and back-end), monthly PITI breakdown, PMI, FHA MIP, VA funding fee, max home price, stress test. Conventional, FHA and VA loans compared.
+- [US Rental Property ROI Calculator](https://mmandai.github.io/us-rental-roi/): Cap rate, cash-on-cash ROI, MACRS depreciation schedule, Schedule E tax estimate, 1% rule check.
+- [US Closing Costs Calculator](https://mmandai.github.io/us-closing-cost-estimator/): Buyer and seller closing costs for all 50 states — transfer taxes, title insurance, attorney fees, lender charges.
+- [US Calculadora de Hipoteca](https://mmandai.github.io/us-hipoteca/): Versión en español — DTI, pago mensual PITI, PMI y precio máximo de vivienda. Convencional, FHA y VA comparados.
+- [US ROI Propiedad de Alquiler](https://mmandai.github.io/us-roi-alquiler/): Versión en español — tasa de capitalización, rendimiento cash-on-cash, depreciación MACRS, Schedule E y regla del 1%.
+- [US Alquilar o Comprar](https://mmandai.github.io/us-alquilar-comprar/): Versión en español — comparación financiera completa a 10 años, patrimonio acumulado, costo de oportunidad y punto de equilibrio.
+
+## Calculators — Poland
+
+- [Kredyt vs Wynajem](https://mmandai.github.io/pl-kredyt-vs-wynajem/): Kredyt hipoteczny czy wynajem — wskaźnik cena/czynsz, tabela 10-letnia, 3 scenariusze oprocentowania WIBOR.
+- [Rentowność Najmu](https://mmandai.github.io/pl-rentownosc-najmu/): ROI netto z wynajmu, zysk miesięczny, podatek ryczałtowy 8,5% (Ustawa o PIT art. 6 ust. 1a), pustostany, projekcja 5-letnia, 3 scenariusze.
+- [Pakiet Inwestora](https://mmandai.github.io/pakiet-inwestora/): Porównywarka nieruchomości (do 3 ofert), kalkulator zysku z flipu z holding costs, estymator kosztów remontu z cenami rynkowymi 2026 w 4 poziomach wykończenia.
+
+## Calculators — Germany
+
+- [Grunderwerbsteuer Rechner](https://mmandai.github.io/de-grunderwerbsteuer/): Grunderwerbsteuer für alle 16 Bundesländer (3,5%–6,5%), Notargebühren nach GNotKG, Grundbucheintrag, Maklerprovision nach Bestellerprinzip, monatliche Kreditrate.
+- [Immobilien Renditerechner](https://mmandai.github.io/de-renditerechner/): Nettomietrendite, AfA nach Baujahr, Cashflow nach Steuer, Kaufpreisfaktor, Eigenkapitalrendite.
+- [AfA-Rechner](https://mmandai.github.io/de-afa/): Lineare AfA, degressive AfA und §7b Sonder-AfA. Steuerersparnis und 50-jähriger Abschreibungsplan.
+
+## Calculators — France
+
+- [Rendement Locatif LMNP vs Nue](https://mmandai.github.io/fr-rendement-locatif/): Comparaison des 6 régimes fiscaux — Micro-Foncier, Réel Foncier, Micro-BIC, LMNP Réel, SCI IR, SCI IS. Cashflow net après impôts, impact LF 2025 (loi n°2025-127 du 14 février 2025) sur la plus-value LMNP à la revente.
+- [Plus-Value Immobilière](https://mmandai.github.io/fr-plus-value-immobiliere/): IR 19%, prélèvements sociaux 17,2%, abattements par durée de détention, surtaxe progressive, impact LF 2025 pour LMNP réel.
+
+## Calculators — Switzerland
+
+Available in both German and French. Covers the federal Eigenmietwert abolition from 2028.
+
+- [Amortissement Direct vs Indirect (FR)](https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect/): Pilier 3a, économie fiscale, avantage net, impact suppression valeur locative 2028.
+- [Direkte vs. Indirekte Amortisation (DE)](https://mmandai.github.io/ch-de-direkte-vs-indirekte-rechner/): Säule 3a, Steuerersparnis, Kapitalvergleich, Eigenmietwert-Abschaffung 2028.
+
+## Calculators — Spain
+
+- [Calculadora ITP y Gastos de Compraventa](https://mmandai.github.io/es-itp/): ITP, AJD, notaría, registro y gestoría para las 19 Comunidades Autónomas. Segunda mano y obra nueva.
+
+## Calculators — Italy
+
+- [Cedolare Secca vs IRPEF](https://mmandai.github.io/it-cedolare-secca-vs-irpef/): Confronto dei due regimi fiscali — canone libero (21%), concordato (10%), affitti brevi (26%). Scaglioni IRPEF 2026, addizionali regionali e comunali, imposta di registro.
+
+## Articles — United Kingdom
+
+- [Section 24 Explained](https://mmandai.github.io/uk-section-24-explained/): How the Finance Act 2015 mortgage interest restriction works, the 20% tax credit mechanism, real worked examples for basic, higher and additional rate taxpayers, and when a limited company structure beats personal ownership.
+- [HMO vs BTL Explained](https://mmandai.github.io/uk-hmo-vs-btl/): Comparison of single-let buy-to-let versus House in Multiple Occupation — yield gap, licensing requirements, mortgage availability, management intensity, exit strategies.
+- [SDLT Explained](https://mmandai.github.io/uk-sdlt-explained/): Banded rate mechanics, October 2024 5% BTL surcharge, April 2025 threshold changes, first-time buyer relief, non-UK resident surcharge.
+- [Rent vs Buy Explained](https://mmandai.github.io/uk-rent-vs-buy-explained/): The full financial framework — opportunity cost of deposit, transaction costs both sides, equity build, break-even analysis and when renting is mathematically correct.
+
+## Articles — United States (English)
+
+- [Cap Rate Explained](https://mmandai.github.io/us-cap-rate-explained/): What capitalization rate measures, why it ignores leverage, how to read it across markets, and why most beginners use it wrong.
+- [FHA vs Conventional](https://mmandai.github.io/us-fha-vs-conventional/): Down payment, MIP vs PMI, credit score thresholds, DTI flexibility, loan limits and when each loan type wins.
+- [MACRS Depreciation Explained](https://mmandai.github.io/us-macrs-depreciation-explained/): The 27.5-year residential schedule, mid-month convention, land vs improvements split, recapture at sale (IRS Publication 946).
+- [Mortgage vs Buy](https://mmandai.github.io/us-mortgage-vs-buy/): Year-by-year financial comparison — closing costs, PMI drop-off, equity build vs investment opportunity cost, true break-even point.
+
+## Articles — United States (Español)
+
+- [¿Cómo califico para una hipoteca en EE.UU.?](https://mmandai.github.io/us-como-calificar-hipoteca/): Los cuatro factores de calificación — puntaje FICO, relación deuda-ingreso (DTI), enganche y historial laboral. Tablas de requisitos, ejemplos reales y checklist de documentos para la pre-aprobación.
+- [FHA vs Convencional](https://mmandai.github.io/us-fha-vs-convencional/): Comparación completa entre préstamo FHA y convencional — MIP vs PMI, costo total a 30 años, límites de préstamo 2026, cuándo cada tipo de préstamo gana y estrategia FHA→refinanciamiento.
+- [¿Cuánto cuesta realmente comprar una casa en EE.UU.?](https://mmandai.github.io/us-cuanto-cuesta-comprar-casa/): Todos los costos reales desglosados en tres etapas — pre-cierre, día del cierre y costos mensuales recurrentes. Tablas por estado, enganche FHA vs convencional y resumen de efectivo necesario.
+- [¿Alquilar o comprar casa en EE.UU.?](https://mmandai.github.io/us-alquilar-o-comprar-explicado/): Análisis completo con matemáticas reales — break-even por horizonte temporal, ratio precio-alquiler para 9 ciudades, costo de oportunidad del enganche y estrategia "alquilar e invertir la diferencia".
+
+## Articles — Poland
+
+- [Kredyt vs Wynajem — wyjaśnienie](https://mmandai.github.io/pl-kredyt-vs-wynajem-wyjasnienie/): Pełne wyjaśnienie wskaźnika cena/czynsz, koszt alternatywny wkładu własnego, wpływ WIBOR, scenariusze deflacji i inflacji.
+- [Ryczałt vs Zasady Ogólne](https://mmandai.github.io/pl-ryczalt-vs-zasady-ogolne/): Porównanie podatku ryczałtowego 8,5% z opodatkowaniem na zasadach ogólnych, próg 100 000 zł, kiedy każda forma jest opłacalna.
+
+## Articles — Germany
+
+- [Grunderwerbsteuer erklärt](https://mmandai.github.io/de-grunderwerbsteuer-erklart/): Wie die Grunderwerbsteuer in den 16 Bundesländern funktioniert, Bemessungsgrundlage, Ausnahmen und Befreiungen, Kaufnebenkosten im Überblick.
+- [AfA erklärt](https://mmandai.github.io/de-afa-erklart/): Lineare versus degressive AfA, §7b Sonder-AfA für Neubauten, Gebäude-Grundstück-Aufteilung, Auswirkung beim Verkauf.
+
+## Articles — France
+
+- [LMNP vs SCI](https://mmandai.github.io/fr-lmnp-vs-sci/): Comparaison du statut LMNP avec la SCI à l'IR et à l'IS — fiscalité courante, plus-value à la revente, transmission, impact LF 2025.
+- [Micro-Foncier vs Réel](https://mmandai.github.io/fr-micro-foncier-vs-reel/): Abattement forfaitaire 30% versus déduction des charges réelles, déficit foncier, seuil de bascule, irrévocabilité du régime réel.
+- [Plus-value expliquée](https://mmandai.github.io/fr-plus-value-expliquee/): Calcul détaillé de la plus-value immobilière, abattements par durée de détention pour IR et prélèvements sociaux, surtaxe et cas LMNP au régime réel.
+
+## Articles — Switzerland
+
+- [Amortissement expliqué (FR)](https://mmandai.github.io/ch-fr-amortissement-direct-vs-indirect-explique/): Mécanique de l'amortissement direct et indirect, rôle du pilier 3a, comparaison du capital à 15 ans, conséquences de l'abolition de la valeur locative en 2028.
+- [Amortisation erklärt (DE)](https://mmandai.github.io/ch-de-direkte-vs-indirekte-erklart/): Direkte versus indirekte Amortisation, Säule 3a als Tilgungsvehikel, Steuerersparnis, Wirkung der Eigenmietwert-Abschaffung 2028.
+
+## Articles — Spain
+
+- [ITP vs IVA](https://mmandai.github.io/es-itp-vs-iva/): Cuándo aplica el ITP (segunda mano) y cuándo el IVA + AJD (obra nueva), tipos por Comunidad Autónoma, casos especiales y excepciones.
+- [Gastos de Compraventa](https://mmandai.github.io/es-gastos-compraventa/): Desglose completo de los gastos de compraventa — notaría, registro, gestoría, tasación, impuestos y honorarios bancarios.
+
+## Articles — Italy
+
+- [Cedolare Secca spiegata](https://mmandai.github.io/it-cedolare-secca-spiegato/): Come funziona la cedolare secca al 21% e al 10%, requisiti per il canone concordato, rinuncia ISTAT, confronto con IRPEF a scaglioni.
+- [Affitti Brevi vs Lunghi](https://mmandai.github.io/it-affitti-brevi-vs-lunghi/): Confronto fiscale e operativo tra locazioni brevi (cedolare 26% dal secondo immobile) e contratti di lunga durata, costi di gestione e rendimento netto.
+
+## Glossaries
+
+Each market has a dedicated glossary with definitions, formulas, worked examples and cross-links to the relevant calculators.
+
+- [UK Property Glossary](https://mmandai.github.io/uk-glossary/): SDLT, Section 24, ICR, LTV, BTL yield, HMO, CGT, leasehold, freehold, EPC and more.
+- [US Real Estate Glossary](https://mmandai.github.io/us-glossary/): DTI, PMI, MIP, cap rate, MACRS, Schedule E, escrow, closing costs and more.
+- [US Glosario Inmobiliario](https://mmandai.github.io/us-glosario/): Versión en español — DTI, PMI, tasa de capitalización, depreciación MACRS y más.
+- [Słownik Inwestora PL](https://mmandai.github.io/pl-slownik/): ROI, rentowność najmu, ryczałt, PCC, flip, LTV, WIBOR, zdolność kredytowa i więcej.
+- [Immobilien Glossar DE](https://mmandai.github.io/de-glossar/): Grunderwerbsteuer, AfA, Nettomietrendite, Kaufpreisfaktor, Bestellerprinzip und mehr.
+- [Glossaire Immobilier FR](https://mmandai.github.io/fr-glossaire/): LMNP, micro-BIC, réel foncier, plus-value, SCI, déficit foncier et plus.
+- [Glossar Schweiz DE](https://mmandai.github.io/ch-glossar/): Amortisation, Säule 3a, Eigenmietwert, Tragbarkeit, Belehnung und mehr.
+- [Glossaire Suisse FR](https://mmandai.github.io/ch-glossaire/): Amortissement, pilier 3a, valeur locative, capacité financière et plus.
+- [Glosario Inmobiliario ES](https://mmandai.github.io/es-glosario/): ITP, AJD, plusvalía municipal, nota simple, gastos de hipoteca y más.
+- [Glossario Immobiliare IT](https://mmandai.github.io/it-glossario/): Cedolare secca, IRPEF, rogito, visura catastale, mutuo e più.
+
+## Methodology
+
+Every calculator includes an inline methodology section with the exact formulas used and references to legislative sources. Key sources include: HMRC SDLT guidance · Finance Act 2015 §24 · PRA SS13/16 · Corporation Tax Act 2010 · GNotKG · EStG (§7, §7b, §21) · Code Général des Impôts · Loi de Finances 2025 (n°2025-127 du 14 février 2025) · Ustawa o PIT · AEAT · Agenzia delle Entrate · ESTV / Säule 3a · HUD/FHA guidelines · IRS Publication 946 (MACRS).
+
+## Usage
+
+All web calculators are free to use without signup or registration. Content may be referenced and cited freely for informational purposes. Results are estimates — not financial, tax or legal advice. Always consult a qualified professional before making property decisions.
+
+## Contact
+
+imemyselfandai@gmail.com
+
+## Coverage
+
+8 markets · 6 languages (EN, DE, FR, ES, PL, IT) · 24 calculators · 25 articles · 10 glossaries · Updated when legislation changes · Last reviewed June 2026
